@@ -1,0 +1,370 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <meta name="my description for web">
+    <meta name="something, something, something">
+</head>
+
+<body>
+    <h1>H1 Tag</h1>
+    <h2>H2 Tag</h2>
+    <h3>H3 Tag</h3>
+    <h4>H4 Tag</h4>
+    <h5>H5 Tag</h5>
+    <!-- TABLES -->
+        <style>
+            table {
+                font-family: sans-serif;
+                width: 100%;
+                border-collapse: collapse;
+                -webkit-border-radius: 7px;
+                -moz-border-radius: 7px;
+                border-radius: 7px;
+            }
+
+            th {
+                background-color: black;
+                color: white;
+            }
+
+            td,
+            th {
+                padding: 15px;
+                text-align: left;
+                border: 1px solid grey;
+            }
+
+            tr:nth-child(even) {
+                background-color: lightgrey;
+            }
+
+            tr:nth-child(3) {
+                background-color: darkgrey;
+            }
+
+            tr:nth-child(5) {
+                background-color: darkgrey;
+            }
+
+            tr:nth-child(7) {
+                background-color: darkgrey;
+            }
+
+            .status {
+                text-align: center;
+
+            }
+        </style>
+
+        <form action="contact_form.php" method="get" oninput="invoice.value=parseInt(total.value)+parseInt(shipping.value)">
+
+
+            <label force="name">Name:</label>
+            <input type="text" name="name" placeholder="User Name" required>
+            <br>
+            <label force="name">Email:</label>
+            <input type="text" name="Email" placeholder="someone@something.com" required>
+            <br>
+            <label force="name">Message:</label>
+            <br>
+            <textarea name="message" rows="10" cols="75%"></textarea>
+            <br>
+
+            <label for="source">How did you hear about us?</label>
+            <select name="source">
+                <option value="google">Google</option>
+                <option value="yahoo">Yahoo</option>
+                <option value="ebay">Ebay</option>
+                <option value="amazon">Amazon</option>
+            </select>
+
+            <br>
+
+            <label for="shipping_method">Shipping Method:</label>
+            <select name="shipping_method">
+                <optgroup label="Business">
+                    <option value="biz_overnight">Overnight</option>
+                    <option value="biz_ground">Ground</option>
+                </optgroup>
+                <optgroup label="Residential">
+                    <option value="res_overnight">Overnight</option>
+                    <option value="res_ground">Ground</option>
+                </optgroup>
+            </select>
+
+            <hr>
+
+            <label for="options">Packing Requirements (Select all that apply):</label>
+            <br>
+            <input type="checkbox" name="option" value="premium">Premium
+            <br>
+            <input type="checkbox" name="option" value="automated">Automated
+            <br>
+            <input type="checkbox" name="option" value="rush">Rush
+            <br>
+
+            <hr>
+            <label for="delivery">Shipping Preference:</label>
+            <br>
+            <input type="radio" name="delivery" value="in_store">In Store
+            <br>
+            <input type="radio" name="delivery" value="shipping">Shipping
+            <br>
+
+            <label for="total">Subtotal:</label>
+            <br>
+            <input type="text" name="total" value="0" />
+            <br>
+
+            <label for="shipping">Shipping:</label>
+            <br>
+            <input type="text" name="shipping" value="9" />
+            <br> Total for invoice:
+            <output name="invoice" for="total tax"></output>
+
+            <!-- <label for="total">Subtotal:</label>
+            <br>
+            <input type="text" name="total" value="0" />
+            <br>
+
+            <label for="shipping">Shipping:</label>
+            <br>
+            <input type="text" name="shipping" value="9" />
+            <br> Total for invoice: $
+            <output name="invoice" for="total tax"></output>
+ -->
+
+            <hr>
+
+            <input type="submit" value="send contact request">
+
+        </form>
+        <table>
+        <tr>
+            <th>Name</th>
+            <th>Average</th>
+            <th>HRs</th>
+            <th>RBIs</th>
+            <th colspan="3"></th>
+        </tr>
+        <tr>
+            <td>Altuve, Jose</td>
+            <td>.350</td>
+            <td>32</td>
+            <td>120</td>
+            <th class="status">Edit</th>
+            <th class="status">Delete</th>
+            <td rowspan="5" class="status">Updated Daily</td>
+        </tr>
+        <tr>
+            <td>Altuve, Jose</td>
+            <td>.350</td>
+            <td>32</td>
+            <td>120</td>
+            <th class="status">Edit</th>
+            <th class="status">Delete</th>
+        </tr>
+        <tr>
+            <td>Altuve, Jose</td>
+            <td>.350</td>
+            <td>32</td>
+            <td>120</td>
+            <th class="status">Edit</th>
+            <th class="status">Delete</th>
+        </tr>
+        <tr>
+            <td>Altuve, Jose</td>
+            <td>.350</td>
+            <td>32</td>
+            <td>120</td>
+            <th class="status">Edit</th>
+            <th class="status">Delete</th>
+        </tr>
+        <tr>
+            <td>Player XYZ</td>
+            <td colspan="5"> Did not play this year---------------------------------------</td>
+        </tr>
+
+        <tr>
+            <td colspan="7">Totals:_____</td>
+        </tr>
+        <!-- html forms-->
+
+
+    </table>
+    <div>
+        <p>fjdsal;kjf</p>
+        <hr>
+        <p> stuffffffffffffffffffffffffffffffff
+            <br>fffffffffffffffffffffffffffffffffffffffffff
+            <br>fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+        <p>first content</p>
+        <div>
+            second content
+            <span style="color: red;">goes</span> here
+        </div>
+        <div>
+            <p>third content</p>
+        </div>
+        <hr>
+        <div>
+            <p>my great
+                <a href="coolmath.com" target="_blank"> website</a>
+            </p>
+        </div>
+    </div>
+    <div>
+        <ol>
+            <li>The reason
+                <br>
+                <a href="coolmath.com">reference materials</a>
+            </li>
+            <li>next reason </li>
+            <li>last reason</li>
+        </ol>
+        <ul style="list-style-type: square;">
+            <li>The reason
+                <br>
+                <a href="coolmath.com">reference materials</a>
+            </li>
+            <li>next reason </li>
+            <li>last reason</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li>The reason
+                <br>
+                <a href="coolmath.com">reference materials</a>
+            </li>
+            <li>next reason </li>
+            <li>last reason</li>
+        </ul>
+        <div>
+            <p>a distinct
+                <b>section</b> of a piece of writing, usually
+                <strong>dealing</strong> with a
+                <i>single</i> theme and
+                <em>indicated</em> by a new line, indentation, or numbering.
+            </p>
+
+            <ul>
+                <li>The
+                    <mark>marked</mark> text tag</li>
+                <li>The
+                    <small>small</small> text tag</li>
+                <li>The
+                    <del>deleted</del> text tag</li>
+                <li>The
+                    <ins>inserted</ins> text tag</li>
+                <li>The
+                    <sub>subscript</sub> text tag</li>
+                <li>The
+                    <sup>superscript</sup> text tag</li>
+                <li>The
+                    <pre>pre</pre> tag</li>
+                <li>The
+                    <q>quotation</q> text tag</li>
+
+            </ul>
+
+
+        </div>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Mount_Kilimanjaro_Dec_2009_edit1.jpg" width="100%" alt="Picture of Mount Kilimanjaro">
+    </div>
+    <div>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/6/60/Mount_Kilimanjaro_Dec_2009_edit1.jpg" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Mount_Kilimanjaro_Dec_2009_edit1.jpg" height="399" alt="cool duck">
+        </a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Mount_Kilimanjaro_Dec_2009_edit1.jpg" height="399" alt="cool duck"
+            usemap="#ducklinks">
+
+        <map name="ducklinks">
+            <area shape="rect" coords="0,0,25,25" alt="goes to google" href="google.com">
+            <area shape="circle" coords="40,40,25,25" alt="goes to yahoo" href="yahoo.com">
+            <area shape="poly" coords="0,0,25,25" alt="goes to google" href="google.com">
+        </map>
+    </div>
+    <div>
+        <widget>
+            <div style="font-size: 2em; color: blue; margin-top: 50px">My Navigation Element</div>
+            <p>bla bla bla</p>
+        </widget>
+    </div>
+    <!-- this is my great comment-->
+
+    <div class="paragraph_one" style="background-color: black; color: white; padding: 20px;">In the “Writing with Purpose” section of the Pattern Based Writing: Quick Easy Essay program, students learn to apply
+        their new writing strategies to different types (or modes) of writing. The
+        <span style+ "color: red;">truth is</span> — it’s quite easy to get students writing many different types of paragraphs when they have the right
+        foundation
+    </div>
+    <div class="paragraph_two">In the “Writing with Purpose” section of the Pattern Based Writing: Quick Easy Essay program, students learn to apply
+        their new writing strategies to different types (or modes) of writing. The truth is — it’s
+        <span class="highlight">quite easy to get </span>students writing many different types of paragraphs when they have the right foundation.
+    </div>
+
+    <div>
+        <widget>
+            <div id="heading">
+                <h3 id="title">My Navigation Element</h3>
+            </div>
+            <p>bla bla bla</p>
+        </widget>
+    </div>
+    <!-- this is my great comment-->
+    <div>
+        <h3 id="sub">My sub heading</h3>
+
+    </div>
+
+    <div class="content">In the “Writing with Purpose” section of the Pattern Based Writing: Quick Easy Essay program, students learn to apply
+        their new writing strategies to different types (or modes) of writing. The truth is — it’s quite easy to get students
+        writing many different types of paragraphs when they have the right foundation
+    </div>
+    <div class="content">In the “Writing with Purpose” section of the Pattern Based Writing: Quick Easy Essay program, students learn to apply
+        their new writing strategies to different types (or modes) of writing. The truth is —
+        <span class="highlight">it’s quite easy</span> to get students writing many different types of paragraphs when they have the right foundation.
+        <a href="www.coolmath.com"> A link for coolmath</a>
+    </div>
+    <ul class="content" id="content-bullets">
+        <li>First Item on the List</li>
+        <li>Second Item on the List</li>
+        <li>Third Item on the list</li>
+    </ul>
+    <div id="pricing-table">
+        <div class="package">
+            <h2>Package 1</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <p>9.99/m</p>
+        </div>
+
+        <div class="package">
+            <h2>Package 2</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <p>19.99/m</p>
+        </div>
+
+        <div class="package">
+            <h2>Package 3</h2>
+            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <p>99.99/m</p>
+        </div>
+
+    </div>
+    <div id="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
+    <p </body>
+
+</html>
